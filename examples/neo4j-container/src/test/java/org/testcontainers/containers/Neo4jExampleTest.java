@@ -20,11 +20,11 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import org.testcontainers.utility.DockerImageName;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.fail;
+import static org.assertj.core.api.Assertions.fail;
 
 // junitExample {
 @Testcontainers
-public class Neo4jExampleTest {
+class Neo4jExampleTest {
 
     @Container
     private static Neo4jContainer<?> neo4jContainer =

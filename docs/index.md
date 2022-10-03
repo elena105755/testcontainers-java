@@ -92,8 +92,8 @@ Using Gradle 5.0 or higher, you can add the following to the `dependencies` sect
 !!! warning "Shaded dependencies"
     Testcontainers depends on other libraries (like docker-java) for it to work.  
     Some of them (JUnit, docker-java-{api,transport} and its transitive dependencies, JNA, visible-assertions and others) are part of our public API.  
-    But there are also "private", implementation detail dependencies (e.g. docker-java-core, Guava, OkHttp, etc etc) that are not exposed to public API but prone to conflicts with test code/application under test code. 
-    As such, **these libraries are 'shaded' into the core testcontainers JAR** and relocated under `org.testcontainers.shaded` to prevent class conflicts.
+    But there are also "private", implementation detail dependencies (e.g., docker-java-core, Guava, OkHttp, etc.) that are not exposed to public API but prone to conflicts with test code/application under test code. 
+    As such, **these libraries are 'shaded' into the core Testcontainers JAR** and relocated under `org.testcontainers.shaded` to prevent class conflicts.
 
 ## Sponsors
 
@@ -200,11 +200,13 @@ A huge thank you to our sponsors:
 * [Alkira](https://www.alkira.com/) - Testing of multiple micro-services using Kafka, PostgreSQL, Apache Zookeeper, Etcd and so on.
 * [Togglz](https://www.togglz.org/) - Feature Flags for the Java platform
 * [Byzer](https://www.byzer.org/home) - Integration tests for Data and AI platforms are based on multiple versions of Byzer, Ray and Apache Spark.
-
+* [Apache SeaTunnel](https://github.com/apache/incubator-seatunnel) - Integration testing with different datasource.
+* [Bucket4j](https://github.com/bucket4j/bucket4j) - Java rate-limiting library based on the token-bucket algorithm.
+* [Spark ClickHouse Connector](https://github.com/housepower/spark-clickhouse-connector) - Integration tests for Apache Spark with both single node ClickHouse instance and multi-node ClickHouse cluster.
 
 ## License
 
-See [LICENSE](https://raw.githubusercontent.com/testcontainers/testcontainers-java/master/LICENSE).
+See [LICENSE](https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/LICENSE).
 
 ## Attributions
 
@@ -216,4 +218,4 @@ This project was initially inspired by a [gist](https://gist.github.com/mosheesh
 
 Copyright (c) 2015-2021 Richard North and other authors.
 
-See [AUTHORS](https://raw.githubusercontent.com/testcontainers/testcontainers-java/master/AUTHORS) for contributors.
+See [AUTHORS](https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/AUTHORS) for contributors.
